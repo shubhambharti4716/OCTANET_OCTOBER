@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link rel="icon" href="./media/favicon.png" />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <!-- Font Awesome Symbols/Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+
+    <!-- JavaScript -->
+    <script defer src="script.js"></script>
+
+    <!--    CSS File-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+
+        <!-- Header -->
+        <h1 class="text-center" style="font-weight: 600; color: #0e3528">
+            ToDo
+            <small class="text-muted" style="color: #1cb084;font-weight: 600; font-size: 40px">List</small>
+        </h1>
+
+        <!-- Blockquotes -->
+        <figure>
+            <blockquote style="color: #0e3528" class="blockquote">
+                <p style="margin-left: 10%">
+                    <br>“There is satisfaction," he said to Dalinar, "in creating a list of things
+                    <br> you can actually accomplish, then removing them one at a time.”
+                </p>
+            </blockquote>
+            <figcaption style="margin-left: 30%" class="blockquote-footer">
+                Brandon Sanderson in <cite title="Source Title">Oathbringer</cite><br>
+            </figcaption>
+        </figure>
+
+        <div class="row">
+
+            <!-- Input Box -->
+            <div class="col-md-7">
+                <div class="mb-3">
+                    <label for="inpNewTask" class="form-label" style="font-weight: 600; color: #0e3528 ">Create a
+                        new
+                        task</label>
+                    <input type="text" class="form-control" id="inpNewTask" style="background-color: #c2efe0"
+                           aria-describedby="newTaskHelp" placeholder="Please enter your task...">
+                    <small id="newTaskHelp" class="form-text text-muted">A short one line description of your
+                        task.</small>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="col-md-5">
+                <div class="row">
+
+                    <!-- Add Button -->
+                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                        <button class="btn btn-success col" id="btnAdd"
+                                style="background-color:#88FE92; color: #26983B" disabled>
+                            <i class="fas fa-plus-square" style="color:#26983B"></i> Add
+                        </button>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <div class="col-6 col-sm-3 col-md-6 p-1">
+                        <button class="btn btn-danger col" id="btnReset"
+                                style="background-color: #F47875; color: #982826" disabled>
+                            <i class="fas fa-backspace" style="color: #982826"></i> Reset
+                        </button>
+                    </div>
+
+                    <!-- Sort Button -->
+                    <div class="col-6 col-sm-3 col-md-6  p-1">
+                        <button class="btn btn-info col" id="btnSort"
+                                style="background-color:skyblue; color: darkcyan" disabled>
+                            <i class="fas fa-sort-amount-down" style="color: darkcyan"></i> Sort
+                        </button>
+                    </div>
+
+                    <!-- Cleanup Button -->
+                    <div class="col-6 col-sm-3 col-md-6  p-1">
+                        <button class="btn btn-warning col" id="btnCleanup"
+                                style="background-color: #F7DE70; color: darkgoldenrod" disabled>
+                            <i class="fas fa-trash-alt" style="color: darkgoldenrod"></i> Cleanup
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Task List -->
+        <ul class="row list-group m-2" id="ulTasks" style="">
+        </ul>
+    </div>
+</header>
+
+<!-- Footer -->
+<div id="doodleContainer">
+    <!-- Doddle-->
+    <div id="doodleImg">
+        <img style="text-align: center;height: 1%;width: 7% " src="media/doodle.png">
+    </div>
+    <!-- social link -->
+    <div id="connect">
+        connect<br>
+        <a href="https://github.com/shubhambharti4716"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shubhambharti4716/"><i class="fab fa-linkedin"></i></a>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+#ulTasks li.done {
+    text-decoration: line-through;
+    background-color: #c2efe0;
+    color: #072c21;
+}
+
+#ulTasks li {
+    background-color: #1cb084;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat/Montserrat-Regular.ttf);
+    font-style: normal ;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat/Montserrat-SemiBold.ttf);
+    font-style: normal ;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(Montserrat/Montserrat-Bold.ttf);
+    font-style: normal ;
+    font-weight: 700;
+}
+
+header {
+    background-image: url(media/artwork.png);
+
+    background-position: 100% 0%;
+    background-size: 35%, 35%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    padding-top: 6%;
+    padding-bottom: 7%;
+}
+
+body {
+    font-family: Montserrat;
+    font-weight: 100;
+
+    width: auto;
+    height: auto;
+    background-image: url(media/abstractColor.jpg);
+}
+
+.btn {
+    font-weight: 600;
+}
+
+#doodleContainer {
+    padding-top: 1%;
+    background-color: #f0ceb7;
+    text-align: center;
+    padding-bottom: 0%;
+}
+
+#connect {
+    /* margin-left: 45%; */
+    margin-right: auto;
+    color: #0e3528;
+    font-weight: 600;
+    text-align: center;
+}
+
+#doodleImg {
+    text-align: center;
+    background-size: 20%, 20%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
